@@ -5,7 +5,6 @@ import { Platform } from 'react-native';
 import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
 import Navigation from './navigation';
-// import Parse from "parse/react-native.js";// In a React Native application
 const Parse = require('parse/react-native.js');
 import keys from './constants/Keys';
 import AsyncStorage from '@react-native-async-storage/async-storage';
