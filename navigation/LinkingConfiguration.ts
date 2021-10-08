@@ -13,21 +13,41 @@ const linking: LinkingOptions<RootStackParamList> = {
   prefixes: [Linking.makeUrl('/')],
   config: {
     screens: {
-      Root: {
+      StartToast:{
         screens: {
-          TabOne: {
-            screens: {
-              TabOneScreen: 'one',
-            },
-          },
-          TabTwo: {
-            screens: {
-              TabTwoScreen: 'two',
-            },
-          },
+          StartToastScreen: 'Start Toast'
         },
       },
-      Modal: 'modal',
+      Login:{
+        screens: {
+          HomeScreen: 'Login'
+        },
+      },
+      Register:{
+        screens: {
+          RegisterScreen: 'Register'
+        },
+      },
+      Logout:{
+        screens: {
+          LogoutScreen: 'Logout'
+        },
+      },
+      Home:{
+        screens: {
+          HomeScreen: 'Home'
+        },
+      },
+      PatientForm: {
+        screens:  {
+          PatientFormScreen: ' Patient Form',
+        },
+      },
+      DoctorDashboard: {
+        screens: {
+          DoctorDashboardScreen: 'Doctor Dashboard',
+        },
+      },
       NotFound: '*',
     },
   },

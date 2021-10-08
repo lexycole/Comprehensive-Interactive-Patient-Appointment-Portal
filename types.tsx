@@ -1,35 +1,43 @@
-/**
- * Learn more about using TypeScript with React Navigation:
- * https://reactnavigation.org/docs/typescript/
- */
+export type RootStackParamList = {
+  // Root: NavigatorScreenParams<RootTabParamList> | undefined;
+  Home: undefined;
+  NotFound: undefined;
+  PatientForm: undefined;
+  DoctorDashboard: undefined;
+  Login: undefined;
+  Register: undefined;
+  StartToast: undefined;
+  Logout: undefined;
+  DoctorPhoneAuthScreen:undefined;
+};
 
-import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
-import { CompositeScreenProps, NavigatorScreenParams } from '@react-navigation/native';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
-
-declare global {
-  namespace ReactNavigation {
-    interface RootParamList extends RootStackParamList {}
-  }
+export type DrawerNavigatorParamList = {
+  PatientForm: undefined;
+  DoctorDashboard: undefined;
+  Logout: undefined;
 }
 
-export type RootStackParamList = {
-  Root: NavigatorScreenParams<RootTabParamList> | undefined;
-  Modal: undefined;
-  NotFound: undefined;
+export type HomeParamList = {
+  HomeScreen: undefined;
 };
-
-export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<
-  RootStackParamList,
-  Screen
->;
-
-export type RootTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
+export type LoginParamList = {
+  LoginScreen: undefined;
 };
-
-export type RootTabScreenProps<Screen extends keyof RootTabParamList> = CompositeScreenProps<
-  BottomTabScreenProps<RootTabParamList, Screen>,
-  NativeStackScreenProps<RootStackParamList>
->;
+export type RegisterParamList = {
+  RegisterScreen: undefined;
+};
+export type StartToastParamList = {
+  StartToast: undefined;
+};
+export type PatientFormParamList = {
+  PatientFormScreen: undefined;
+};
+export type LogoutScreenParamList = {
+  LogoutScreen: undefined;
+};
+export type MyAppointmentParamList = {
+  DoctorDashboardScreen: undefined;
+};
+export type DoctorPhoneAuthParamList = {
+  DoctorPhoneAuthScreen: undefined;
+};

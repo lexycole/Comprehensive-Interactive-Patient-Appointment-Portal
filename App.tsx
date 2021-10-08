@@ -1,12 +1,32 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, {useEffect} from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-
+import { Platform } from 'react-native';
 import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
 import Navigation from './navigation';
+// import Parse from "parse/react-native.js";// In a React Native application
+const Parse = require('parse/react-native.js');
+import keys from './constants/Keys';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+Parse.setAsyncStorage(AsyncStorage);
+Parse.initialize(keys.applicationId, keys.javascriptKey);
+Parse.serverURL = keys.serverURL;
 
 export default function App() {
+  useEffect(() => {
+    const createInstallation = async () => {
+      const Installation = Parse.Object.extend(Parse.Installation);
+      const installation = new Installation();
+  
+      installation.set("deviceType", Platform.OS);
+  
+      await installation.save();
+    }
+
+    createInstallation();
+  }, []);
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
 

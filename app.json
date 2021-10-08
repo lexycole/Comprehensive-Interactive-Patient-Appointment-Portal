@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HealthBooking",
-    "slug": "HealthBooking",
+    "name": "DocPat",
+    "slug": "DocPat",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -10,7 +10,7 @@
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#8BB7F0"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -19,16 +19,19 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lexycode.docpatapp",
+      "buildNumber": "1.0.0"
     },
     "android": {
+      "package": "lexycode.docpatapp",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/icon.png"
     }
   }
 }
