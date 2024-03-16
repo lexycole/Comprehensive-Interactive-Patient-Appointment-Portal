@@ -1,15 +1,17 @@
 # 👨‍⚕️🩺DOC-PAT: Doctor and Patient Medical App 
 
 
-[![Language](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)]()
-[![Framework](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)]()
+[![Language](	https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)]()
+[![Framework](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)]()
 
 
-# ✍️ About 
+
+## ✍️ About 
 Comprehensive Interactive Patient Appointment Portal
 This project encompasses an interactive patient appointment portal designed to streamline appointment scheduling and management processes. Users are greeted with a splash screen upon accessing the portal, followed by intuitive doctor and patient login screens for authentication. Patients can register and sign in to schedule appointments, with Firebase providing real-time alerts for successful registration and login. The portal includes features such as appointment creation and deletion, as well as a patient's health status and gender selection options. Doctors can also log in to view their appointments, with Firebase alerting them upon successful login. The portal offers a comprehensive appointment management system, with tabs for pending and confirmed appointments, along with a refresh button to update the appointment status in real-time.
 
-# 📺 Demo / Features
+
+## 📺 Demo / Features
 1. Splash Screen
 <img src="https://user-images.githubusercontent.com/40228505/230907230-1a5dfb13-3049-4939-81a9-5e0860d37568.png" width="300" height="500">
 
